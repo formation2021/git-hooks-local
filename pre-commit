@@ -1,0 +1,12 @@
+#!/bin/sh
+regex='@neoxam\.com$'
+email=$GIT_AUTHOR_EMAIL
+if [[ $email =~ $regex ]];
+then
+  echo your email $email satisfay you GIT policy
+  exit 0
+else 
+  echo "your email $email doesn't satisfay you GIT policy"
+  exit 1
+fi  
+    

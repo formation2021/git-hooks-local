@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "Re-base is not possible in the repository"
+exit 1
